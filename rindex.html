@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<title>Height Finder</title>
+</head>
+<html>
+<body style="background-color:#fdf5df;">
+<script>
+    function roundUp(num, precision) {
+            precision = Math.pow(10, precision)
+            return Math.ceil(num * precision) / precision
+        }
+    function start(){
+            angle = window.prompt("Please enter the angle: ")
+            side = window.prompt("Please enter the side: ")
+            let tanNum = Math.tan(Number(angle) * (22/7) / 180)
+            tanNum = roundUp(tanNum , 3)
+            let otherside = tanNum * Number(side)
+            //console.log(otherside)
+            window.alert(otherside)
+        }
+</script>
+<div class="container">
+<p style=font-size:80px;>Welcome Please click the button to start</p>
+</div>
+<div class="cont">
+<button style=font-size:5pc; type="button" autofocus onclick="start()">Start</button>
+</div>
+<style>
+    .container {
+    background-color: #fdf5df;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.cont {
+    background-color: #fdf5df;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    margin: 4px 2px;
+}
+</style>
+</body>
+</html>
