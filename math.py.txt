@@ -1,0 +1,11 @@
+from math import pi , tan 
+
+
+def func():
+    angle = input("enter angle: ")
+    side = input("enter side: ")
+    intangle = int(angle)
+    tannum = round((tan(intangle * (22/7) / 180)) , 2)
+    otherside = tannum * int(side)
+    print(otherside)
+func()
